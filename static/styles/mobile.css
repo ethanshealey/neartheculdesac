@@ -1,0 +1,75 @@
+@media (min-width: 901px) {
+    .band-grid {
+        height: 70vh;
+        min-height: 480px;
+        margin: 0 2rem 5rem;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .member {
+        flex: 1;
+        transition: flex 0.45s ease;
+    }
+}
+
+@media (min-width: 901px) and (hover: hover) {
+    .member-bg {
+        transition: transform 0.5s ease;
+    }
+
+    .member-info {
+        opacity: 0;
+        transform: translateY(8px);
+        transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    .member:hover {
+        flex: 1.5;
+    }
+
+    .member:hover .member-bg {
+        transform: scale(1.06);
+    }
+
+    .member:hover .member-info {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .site-nav {
+        display: none;
+    }
+
+    .section-intro {
+        padding: 2rem 1.25rem 1rem;
+    }
+
+    .carousel-btn {
+        display: flex;
+    }
+
+    .band-grid {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 0 9% 1.5rem;
+        gap: 12px;
+        margin-bottom: 3rem;
+        cursor: grab;
+    }
+
+    .band-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .member {
+        scroll-snap-align: center;
+        flex: 0 0 82%;
+        height: 72vh;
+        border-radius: 16px;
+    }
+}
