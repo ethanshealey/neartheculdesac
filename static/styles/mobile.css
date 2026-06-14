@@ -39,8 +39,8 @@
 }
 
 @media (max-width: 900px) {
-    .site-nav {
-        display: none;
+    .site-logo {
+        font-size: .75rem;
     }
 
     .section-intro {
@@ -57,7 +57,7 @@
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         padding: 0 9% 1.5rem;
-        gap: 12px;
+        --gap: 12px;
         margin-bottom: 3rem;
         cursor: grab;
     }
