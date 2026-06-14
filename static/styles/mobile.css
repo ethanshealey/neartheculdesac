@@ -43,6 +43,11 @@
         font-size: .75rem;
     }
 
+    .site-nav {
+        width: 200px;
+        justify-content: flex-end;
+    }
+
     .section-intro {
         padding: 2rem 1.25rem 1rem;
     }
